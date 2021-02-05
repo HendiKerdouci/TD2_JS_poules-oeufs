@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD 2 JS</title>
+    <link rel="stylesheet" href="css/td2_JS.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TD JS : poules/oeufs</h1>
+        <div class="form" id="formulaire">
+            <label for="race">Race de la poule</label> <span id="erreurRace" class="obligatoire"> *Champ obligatoire</span><br>
+            <input type="text" name="race" id="race">
+            <br><br>
+            <label for="nom">Nom de la poule</label> <span id="erreurNom" class="obligatoire"> *Champ obligatoire</span><br>
+            <input type="text" name="nom" id="nom">
+            <br><br>
+            <label for="couleurPoule">couleur de la poule</label> <span id="erreurCouleurPoule" class="obligatoire"> *Champ obligatoire</span><br>
+            <input type="text" name="couleurPoule" id="couleurPoule">
+            <br><br>
+            <label for="couleurOeuf">Couleur de l'oeuf</label> <span id="erreurCouleurOeuf" class="obligatoire"> *Champ obligatoire</span><br>
+            <select name="couleurOeuf" id="couleurOeuf">
+                <option value="">Selectionner une couleur</option>
+                <option id="beige" value="beige">Beige</option>
+                <option id="bleu" value="bleu">Bleu</option>
+                <option id="vert" value="vert">Vert</option>
+                <option id="brun" value="brun">Brun</option>
+                <option id="blanc" value="blanc">Blanc</option>
+            </select>
+            <br><br>
+            <label for="nbOeuf">Nombre d'oeuf/jour</label> <span id="erreurNbOeuf" class="obligatoire"> *Champ obligatoire</span><br>
+            <input type="number" name="nbOeuf" id="nbOeuf">
+            <br><br>
+            <div id="succes"></div>
+        </div>
+        <div class="tab" id="tableau">
+            <table id="tableauPoules" border="1">
+                <caption>Liste des poules (CA décroissant / an) :</caption>
+                <thead>
+                    <tr>
+                        <th>Race</th>
+                        <th>Nom de la poule</th>
+                        <th>Couleur de la poule</th>
+                        <th>Couleur des oeufs pondus</th>
+                        <th class="oeufT">Nb d'oeufs/ jour</th>
+                        <th class="oeufT">Nb d'oeufs/ semaine</th>
+                        <th class="oeufT">Nb d'oeufs/ mois</th>
+                        <th class="oeufT">Nb d'oeufs/ année</th>
+                        <th>Chiffre d'affaire annuel</th>
+                    </tr>
+                </thead>
+                <tbody id="ajoutPoule">
+                    
+                </tbody>
+            </table>
+            <br><br>
+            <div id="caTotal">
+                CA annuel: <br>
+                <span id="caSpan"></span>
+            </div>
+        </div>
+        <div class="btns" id="boutons">
+            <button type="button" id="btnAjouter" onclick="ajouter()">Ajouter une poule</button>
+            <button type="button" id="btnAfficher" onclick="afficher()">Afficher les poules</button>
+        </div>
+    </div>
+</body>
+<script src="script/td2_JS.js"></script>
+</html>
