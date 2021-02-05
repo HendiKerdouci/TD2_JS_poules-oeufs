@@ -127,11 +127,7 @@ function ajouter()
             caTotal += ca;
             document.getElementById('succes').innerHTML = 'La poule a bien été ajoutée !';
 
-            document.getElementById('race').value ='';
-            document.getElementById('couleurPoule').value ='';
-            document.getElementById('couleurOeuf').value ='';
-            document.getElementById('nbOeuf').value ='';
-            document.getElementById('race').focus();
+            
         }
     
     }
