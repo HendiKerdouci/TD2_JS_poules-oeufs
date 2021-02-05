@@ -1,0 +1,101 @@
+
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+h1,
+.fas{
+    font-size: 2em;
+}
+
+
+
+.container{
+    width: 40%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: black solid 2px;
+    background-color: #1A1A1A;
+    opacity: 0.9;
+    color: white;
+}
+
+
+
+.form{
+    font-size: 1.2em;
+    width: 65%;
+    
+}
+
+.btns{
+    text-align: center;
+}
+
+button{
+    padding: 8px;
+    font-size: 1em;
+    margin-top: 15px;
+    outline: none;
+}
+
+.far{
+    margin-right: 15px;
+}
+
+
+
+.obligatoire{
+    color: red;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-left: 5px;
+    display: none;   
+}
+
+#succes{
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+
+#tableau{
+    display: none;
+}
+
+table{
+    width: 90%;
+    margin: auto;
+}
+
+caption{
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+th{
+    width: 12%;
+}
+
+.oeufT{
+    width: 8%;
+}
+
+.caT{
+    width: 20%;
+    text-align: right;
+}
+
+#caTotal{
+    text-align: center;
+    font-size: 2em;
+}
+#caSpan{
+    font-size: 2em;
+}
